@@ -1,0 +1,3 @@
+- An object can be made eligible for garbage collection by making sure there are no references pointing to that object.
+- You can suggest the JVM to perform garbage collection by calling System.gc();
+- x starts pointing to a new MyClassObject and no reference to the original MyClass object is left.

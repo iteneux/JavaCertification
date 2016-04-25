@@ -1,0 +1,67 @@
+- The order of keywords for a static import must be "import static ... "
+- You can either import all the static members using import static java.lang.Integer.* or one specific member using import static java.lang.Integer.MAX_VALUE
+- You must specify the full package name of the class that you are importing (just like the regular import statement). So, import static Integer.*; is wrong.
+- Variables can't be declared as abstract or native.
+- static and final are valid modifiers for both member field and method declarations within a class.
+- transient and volatile modifiers are only valid for member field declarations.
+- abstract and native are only valid for member methods.
+- a class declaration can have only final, abstract and public as modifiers, unless it is a nested class, in which case, it can be declared private or  protected as well.
+- Within a method, a local variable may be declared as final.
+- Only member variable can be volatile or transient.
+- You can have a private constructor.
+- A public class must exist in a file by the same name. 
+- A non public class may exist in any file.
+- The main method should be static.
+- All the instance or static variables are given a default values if they are not explicitly initialized. 
+- All numeric variable are given a value of zero or equivalent to zero (i.e. 0 for integral types and 0.0 for double/float). 
+- Booleans are initialized to false and objects are initialized to null.
+- fields cannot be abstract, variables cannot be native.
+- You can only import static members of a class statically.
+- A class may contain both static and non-static variables and both static and non-static methods. 
+- Each object of a class has its own copy of each non-static member variable.
+- The keyword 'this' can only be used within non-static methods
+- static methods cannot access non static fields or methods.
+- int a = b = c = 100; INVALID
+- int a=100, b, c; VALID
+- int a= 100 = b = c; INVALID
+- 20.0 is a double and needs a cast to be assigned to a float. 
+- import java.*; is valid.
+- A class having no abstract method can still be abstract.
+- Variables cannot be declared synchronized. Only methods can be declared synchronized.
+- program is run, the JVM looks for a method named main() which takes an array of Strings as input and returns nothing
+- A valid declaration of "the" main() method must be public and static, should return void, and should take a single array of Strings.
+- The order of the static and public keywords is irrelevant
+- The package declaration can never occur after an import statement.
+- The order of initialization of a class is:
+	1. All static constants, variables and blocks.(Among themselves the order is the order in which they appear in the code.)
+	2. All non static constants, variables and blocks.(Among themselves the order is the order in which they appear in the code.)
+	3. Constructor.
+- private static final transient int i = 20; VALID
+- top level class: abstract, strictfp
+- method: static, native
+- A method that has a body cannot be abstract. 
+- A constructor (or any other method) can access static members.
+- static fields are always initialized automatically if you do not initialize them explicitly. So are instance fields.
+- A final class cannot be subclassed.
+- static methods can't be abstract.
+- import static x.y.SM.foo(); IVALID
+- import static x.y.SM.foo; VALID
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
